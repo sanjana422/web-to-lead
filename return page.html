@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You | Welcome to LWC Communities</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            padding: 30px;
+        }
+
+        /* GLASS CARD CONTAINER */
+        .thankyou-card {
+            width: 500px;
+            padding: 45px 35px;
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.12);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+            color: white;
+            text-align: center;
+            animation: fadeIn 0.8s ease-in-out;
+        }
+
+        /* SUCCESS TICK ICON */
+        .icon-box {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(90deg, #00c6ff, #0072ff);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 25px auto;
+            box-shadow: 0 0 20px rgba(0, 198, 255, 0.5);
+        }
+
+        .icon-box svg {
+            width: 45px;
+            height: 45px;
+            fill: white;
+        }
+
+        /* HEADING & TEXT */
+        .thankyou-card h1 {
+            font-size: 32px;
+            margin-bottom: 12px;
+            font-weight: 700;
+        }
+
+        .thankyou-card p {
+            font-size: 16px;
+            color: #e0e0e0;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        /* BUTTON */
+        .back-btn {
+            display: inline-block;
+            padding: 14px 32px;
+            border-radius: 12px;
+            background: linear-gradient(90deg, #00c6ff, #0072ff);
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .back-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 114, 255, 0.5);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.9); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        /* MOBILE RESPONSIVE */
+        @media(max-width: 600px) {
+            .thankyou-card {
+                width: 100%;
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="thankyou-card">
+        <!-- Success Tick Icon -->
+        <div class="icon-box">
+            <svg viewBox="0 0 24 24">
+                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+            </svg>
+        </div>
+
+        <h1>Thank You For Connecting Us!</h1>
+        
+        <!-- Button (Optional link to main page) -->
+        <a href="#" class="back-btn">Go Back</a>
+    </div>
+
+</body>
+</html>
